@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E_Commerce Website</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!--The Navigation Bar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/EMS.svg" alt="logo footer Image">
+
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#intro">Intro</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#shop">Shop</a>
+            </li>
+        </ul>
+        <button id="cartbtn">
+           <img src="Images/cart.svg">   (<Span id="cartcount">0</Span>)
+           
+        </button>
+    </nav>
+    <!--The Intro section-->
+    <section class="intro" id="edmund">
+        <div class="intro-section">
+            <h1>THE <br>
+                E-MILLENIAL <br>
+                STORE
+            </h1>
+            <a href="#shop">
+                <button class="shopbtn">
+                    SHOP NOW
+                </button>
+            </a>
+
+        </div>
+        <div class="intro-img">
+            <img src="Images/heroImage.png" alt="intro-image">
+        </div>
+    </section>
+
+    <!--The About section-->
+    <section class="about-section" id="about">
+        <p>
+            E-Millenial Store is an hypothetical online store for gadgets.
+            we belive every 'Millenial' or 'Gen-Z' should have today.
+            We've got mbolie phones, smartwatches and other gadgets.
+            Explore all our gadgets and the ones that suit.
+        </p>
+    </section>
+    <!--The Shop section-->
+    <section class="shop-section" id="shop">
+        <h2>
+            OUR GADGETS
+        </h2>
+        <!--Product listed in Grid format-->
+        <div class="products-container" id="products-container">
+            <!--Products are in array from javascript-->
+        </div>
+    </section>
+
+    <!--Cart Modal-->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-body">
+            <div class="cart-Header">
+                <div class="cart-headings">
+                    <span>Item</span>
+                    <span>Price</span>
+                    <span>Quantity</span>
+                </div> <button id="close-cart">X</button>
+            </div>
+            <div class="cart-total">
+                <h3>Total: GHS
+
+                    <span id="cart-total">0</span>
+                </h3>
+            </div>
+            <!--Cart Items-->
+
+            <div id="cart-items" class="cart-items">
+            </div>
+            <!--Total-->
+
+            <!--User Form Input-->
+            <div class="Checkout-form">
+                <input type="text" id="name" placeholder="Full name eg Edmund Arthur">
+                <p id="name-error" style="color: red;"></p><br><br>
+                <input type="email" id="email" placeholder="Email Address eg art.eddie@..">
+                <p id="email-error" style="color: red;"></p><br><br>
+                <input type="tel" id="phone" placeholder="phone Number">
+                <p id="phone-error" style="color: red;"></p><br><br>
+                <br><br>
+                <div class="ckccs">
+                    <button id="continueshp"><a href="#shop">Continue Shopping</a></button>
+                    <button id="Checkout-btn">
+                        Proceed To checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Success Prompt Modal-->
+    <div class="summary-modal" id="summary-modal">
+        <div class="summary-body">
+            <h2>Payment Successful</h2>
+            <p id="success-message"></p>
+            <div id="summmary-items"></div>
+            <button id="close-summary">Close</button>
+        </div>
+    </div>
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-logo">
+            EMS
+        </div>
+        <p>&copy; Designed and Crafted by a Fronted Ninja Eddie kay&reg;</p>
+    </footer>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
